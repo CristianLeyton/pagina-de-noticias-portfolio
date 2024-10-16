@@ -5,7 +5,7 @@
         {{$noticia}}
     </span>  --}}
 
-    <section class="bg-slate-50 px-10 py-5 max-w-6xl mx-auto">
+    <section class="bg-slate-50 px-5 py-5 md:px-10 max-w-6xl mx-auto">
         <share-component :noticia-title="'{{ $noticia->title }}'"></share-component>
 
         <hr class="my-4">

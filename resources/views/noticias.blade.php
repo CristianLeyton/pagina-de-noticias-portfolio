@@ -5,7 +5,7 @@
         {{ $noticias}}
     </span>   --}}
 
-    <section class="bg-slate-50 px-10 py-5 max-w-6xl mx-auto">
+    <section class="bg-slate-50 px-5 py-5 max-w-6xl mx-auto">
 
         <section class="flex flex-col gap-5 items-center w-full mx-auto overflow-hidden mb-5">
             <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-red-600 p-1">NOTICIAS - CANAL 3</h1>
@@ -21,7 +21,7 @@
                             title="{{ $noticia->title }}">
                             <span
                                 class="block w-full h-full bg-cover bg-center bg-no-repeat hover:scale-110 transform transition-all duration-500 ease-in-out overflow-hidden"
-                                style="background-image: url('{{ url('storage', [$noticia->image]) }}')"
+                                style="background-image: url('{{ url('storage_public', [$noticia->image]) }}')"
                                 title="{{ $noticia->title }}">
                             </span>
 
