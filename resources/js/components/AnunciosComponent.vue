@@ -24,7 +24,7 @@ fetch(urlApi)
   .then(response => response.json())
   .then((data) => {
     data.forEach(item => {
-      const urlImage = `${urlBase}/storage/${item.banner}`;
+      const urlImage = `${urlBase}/storage_public/${item.banner}`;
 
       const banner = {
         url: urlImage,

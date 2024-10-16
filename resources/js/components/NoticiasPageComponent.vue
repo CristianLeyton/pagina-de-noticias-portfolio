@@ -87,7 +87,7 @@ const cargarNoticias = () => {
         .then((data) => {
             // Añadir las nuevas noticias a la lista
             data.noticias.forEach(item => {
-                const urlImage = `${urlBase}/storage/${item.image}`;
+                const urlImage = `${urlBase}/storage_public/${item.image}`;
                 const urlNoticia = `${urlBase}/noticias/${item.slug}`;
     
                 const noticia = {
@@ -120,7 +120,7 @@ function cargarMasNoticias() {
         .then(data => {
             // Añadir las nuevas noticias a la lista
             data.noticias.forEach(item => {
-                const urlImage = `${urlBase}/storage/${item.image}`;
+                const urlImage = `${urlBase}/storage_public/${item.image}`;
                 const urlNoticia = `${urlBase}/noticias/${item.slug}`;
     
                 const noticia = {

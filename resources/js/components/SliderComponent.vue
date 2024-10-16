@@ -44,7 +44,7 @@ fetch(urlApi)
     .then(response => response.json())
     .then((data) => {
         data.forEach(item => {
-            const urlImage = `${urlBase}/storage/${item.image}`;
+            const urlImage = `${urlBase}/storage_public/${item.image}`;
 
             const image = {
                 url: urlImage,

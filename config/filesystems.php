@@ -59,6 +59,7 @@ return [
         'public_folder' => [
             'driver' => 'local',
             'root' => base_path('public/storage_public'),
+            /* 'root' => base_path('../storage_public'), ESTO VA AL SUBIRLO A INFINITYFREE*/
             'url' => env('APP_URL').'/storage_public',
             'visibility' => 'public',
          ]
