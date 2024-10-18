@@ -15,7 +15,7 @@ class LinkSeeder extends Seeder
     {
         //
         Links::create([
-            'name'=>'Canal 3 - En vivo',
+            'name'=>'Wuaze TV - En vivo',
             'link'=>'https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1&mute=1&modestbranding=1',
         ]);
     }

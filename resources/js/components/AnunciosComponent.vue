@@ -1,14 +1,13 @@
 <template>
   <transition name="slide">
-  <div v-if="urlAnuncios != 0" class="flex flex-col gap-10 items-center pb-8 bg-red-600">
-    <div class="max-w-5xl px-2 container mx-auto">
-    <a v-for="(banner, index) in urlAnuncios" :key="index" :href="banner.link" target="_blank">
-    <img class="" :src="banner.url" :alt="banner.name"
-      :title="banner.name">
-    </a>
-  </div>
-  </div>
-</transition>
+    <div v-if="urlAnuncios != 0" class="flex flex-col gap-10 items-center pb-8 bg-red-600 ">
+      <div class="max-w-5xl ">
+        <a v-for="(banner, index) in urlAnuncios" :key="index" :href="banner.link" target="_blank">
+          <img class="container mx-auto px-2 xl:px-0" :src="banner.url" :alt="banner.name" :title="banner.name">
+        </a>
+      </div>
+    </div>
+  </transition>
 </template>
 
 <script setup>
@@ -49,18 +48,16 @@ fetch(urlApi)
 </script>
 
 <style scoped>
-
 .slide-enter-active,
 .slide-leave-active {
-    transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
 }
 
 .slide-enter-from {
-    transform: translateY(500%);
+  transform: translateY(500%);
 }
 
 .slide-leave-to {
-    transform: translateY(500%);
+  transform: translateY(500%);
 }
-
 </style>

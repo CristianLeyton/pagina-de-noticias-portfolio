@@ -5,19 +5,19 @@
         {{ $noticias}}
     </span>   --}}
 
-    <section class="bg-slate-50 px-5 py-5 max-w-6xl mx-auto">
+    <section class="px-5 py-5 max-w-6xl mx-auto">
 
-        <section class="flex flex-col gap-5 items-center w-full mx-auto overflow-hidden mb-5">
-            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-red-600 p-1">NOTICIAS - CANAL 3</h1>
+        <section class="flex flex-col gap-5 items-center w-full mx-auto mb-5">
+            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-red-600 p-1">NOTICIAS - WUAZE</h1>
 
 
 
             @if (isset($noticias[0]))
                 @foreach ($noticias as $noticia)
-                    <article class="flex flex-col md:flex-row p-3 w-full gap-5" title="{{ $noticia->title }}">
+                    <article class="shadow-big bg-white rounded-xl flex flex-col md:flex-row p-3 w-full gap-5" title="{{ $noticia->title }}">
 
                         <a href="{{ url('noticias', [$noticia->slug]) }}"
-                            class="shadow-image w-full aspect-video md:max-w-sm lg:max-w-lg overflow-hidden"
+                            class="rounded-lg w-full aspect-video md:max-w-sm lg:max-w-lg overflow-hidden"
                             title="{{ $noticia->title }}">
                             <span
                                 class="block w-full h-full bg-cover bg-center bg-no-repeat hover:scale-110 transform transition-all duration-500 ease-in-out overflow-hidden"
@@ -33,12 +33,12 @@
                                         {{ $noticia->title }}</a>
                                 </h3>
                                 <small class="first-letter:capitalize text-gray-500">{{ $noticia->published_at }}</small>
-                                <p class="text-ellipsis text-pretty text-sm line-clamp-4 lg:line-clamp-5 font-semibold">
+                                <p class="text-ellipsis text-pretty text-sm line-clamp-4 lg:line-clamp-5 font-base">
                                     {{ $noticia->short_description }} </p>
                             </div>
                             <a href="{{ url('noticias', [$noticia->slug]) }}" class="text-center w-full grid">
                                 <button
-                                    class="text-white bg-red-600 hover:bg-red-500 active:scale-95 pb-1 rounded-2xl text-lg font-semibold my-2 transition-all duration-100 ease-out">
+                                    class="text-white bg-red-600 hover:bg-red-500 active:scale-95 pb-1 rounded-lg text-lg font-semibold my-2 transition-all duration-100 ease-out">
                                     Leer más
                                 </button>
                             </a>

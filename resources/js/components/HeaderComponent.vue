@@ -1,7 +1,7 @@
 <template>
     <header class="bg-red-600 text-white sticky top-0 z-50" :class="{'shadow-red': !mostrarSearch}">
         <nav class="container mx-auto flex justify-between items-center px-4 z-10 bg-red-600">
-            <a href="/" title="Canal 3 - Salta">
+            <a href="/" title="Wuaze - TV">
                 <LogoComponent />
             </a>
 

@@ -1,13 +1,13 @@
 <template>
     <transition name="slide">
         <section v-if="ultimasNoticias.length"
-            class="flex flex-col gap-5 items-center w-full mx-auto overflow-hidden mb-10">
+            class="flex flex-col gap-5 items-center w-full mx-auto mb-10">
 
             <article v-for="(noticia, index) in noticiasMostradas" :key="index"
-                class="flex flex-col md:flex-row p-3 w-full gap-5 animate-load" :title="noticia.title">
+                class="shadow-big rounded-xl bg-white flex flex-col md:flex-row p-3 w-full gap-5 animate-load" :title="noticia.title">
 
                 <a :href="noticia.link" 
-                    class="shadow-image w-full aspect-video md:max-w-sm lg:max-w-lg overflow-hidden"
+                    class="rounded-lg w-full aspect-video md:max-w-sm lg:max-w-lg overflow-hidden"
                     :title="noticia.title">
                     <span
                         class="block w-full h-full bg-cover bg-center bg-no-repeat hover:scale-110 transform transition-all duration-500 ease-in-out overflow-hidden"
@@ -27,7 +27,7 @@
                     </div>
                     <a :href="noticia.link" class="text-center w-full grid">
                         <button
-                            class="text-white bg-red-600 hover:bg-red-500 active:scale-95 pb-1 rounded-2xl text-lg font-semibold my-2 transition-all duration-100 ease-out">
+                            class="text-white bg-red-600 hover:bg-red-500 active:scale-95 pb-1 rounded-lg text-lg font-semibold my-2 transition-all duration-100 ease-out">
                             Leer más
                         </button>
                     </a>
@@ -36,7 +36,7 @@
 
             <!-- Botón de cargar más noticias, ocultar cuando todas las noticias hayan sido cargadas -->
             <button v-if="puedeCargarMas" @click="cargarMasNoticias"
-                    class="text-white w-full bg-red-600 hover:bg-red-500 active:scale-95 pb-1 rounded-2xl text-xl font-semibold my-2 transition-all duration-100 ease-out">
+                    class="text-white w-full bg-red-600 hover:bg-red-500 active:scale-95 pb-1 rounded-lg text-xl font-semibold my-2 transition-all duration-100 ease-out">
                     Cargar más noticias
             </button>
         </section>

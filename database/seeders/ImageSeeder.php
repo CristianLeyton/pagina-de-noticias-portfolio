@@ -16,8 +16,8 @@ class ImageSeeder extends Seeder
     {
         //
         Images::create([
-            'name' => 'Banner - Canal 3',
-            'image' => config('app.url').'src/images/canal3-banner.webp'
+            'name' => 'Banner - Wuaze TV',
+            'image' => config('app.url').'src/images/wuaze-banner.webp'
         ]);
     }
 }

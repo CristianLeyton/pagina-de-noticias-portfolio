@@ -27,7 +27,7 @@
 
     <div class="flex items-center aspect-square">
       <span alt="Logo C3" class="block ">
-        <a href="/" title="Canal 3 - Salta" class="">
+        <a href="/" title="Wuaze - TV" class="">
                 <LogoComponent />
         </a>
     </span>

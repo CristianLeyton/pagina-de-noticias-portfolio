@@ -24,17 +24,17 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
         //->brandLogo(asset('logo500x500.png'), 'Panel')
-        ->brandName('Canal 3 - Panel')
+        ->brandName('Wuaze - Panel')
             ->default()
             ->id('admin')
             ->path('admin')
             ->login()
             ->profile()
             ->colors([
-                'danger' => Color::Red,
+                'danger' => Color::Orange,
                 'gray' => Color::Gray,
                 'info' => Color::Blue,
-                'primary' => Color::Indigo,
+                'primary' => Color::Rose,
                 'success' => Color::Emerald,
                 'warning' => Color::Violet,
             ])
