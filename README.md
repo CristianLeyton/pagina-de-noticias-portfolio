@@ -1,5 +1,8 @@
 **Wuaze TV - Sitio Web**
 
+![1](https://github.com/user-attachments/assets/88dd9d55-b128-4fe5-86b3-74474f765429)
+
+
 Utilicé **Laravel** para el backend y **Vue.js con tailwind** para el frontend. 
 
 **Acceder al sitio:**
@@ -12,6 +15,8 @@ https://breakingnews.wuaze.com/admin
 > Usuario: test@mail.com
 
 > Contraseña: test1234
+
+![2](https://github.com/user-attachments/assets/4e4e3aa2-45b4-4dbf-bfa7-25ef015db49a)
 
 
 Ver más de mis proyectos en: 
