@@ -3,30 +3,30 @@
   <div class="container mx-auto flex justify-between items-center">
     <div class="flex flex-col md:flex-row md:items-center w-full flex-wrap">
 
-    <div class="mb-6 md:mb-0 flex-grow mr-16">
+    <div class="mb-6 md:mb-0 flex-grow">
       <h2 class="text-xl lg:text-3xl font-bold mb-4">NOSOTROS</h2>
-      <p>Direccion: Gauchos de Güemes 827</p>
-      <p>Vaqueros, Salta - Argentina</p>
-      <p>CP: 4401</p>
-      <p>Celular: +54 387 418-3423</p>
-      <p class="text-pretty">¡Mandanos un mensaje por redes sociales!</p>
+      <p>Direccion: Calle falsa 123</p>
+      <p>Salta, Salta - Argentina</p>
+      <p>CP: 4400</p>
+      <p>Celular: +54 387 123-4567</p>
+      <p class="pt-2 text-pretty font-semibold">¡Mandanos un mensaje por redes sociales!</p>
     </div>
 
     <div class="flex space-x-4 mb-6 md:mb-0 flex-grow">
-      <a href="#" aria-label="YouTube" rel="ugc" title="Canal de Youtube">
-        <i class='bx bxl-youtube text-5xl' ></i>
+      <a href="#" class="border rounded-xl inline-flex p-0.5 hover:bg-white hover:border-red-700 hover:text-red-600 transition-colors duration-300" aria-label="YouTube" rel="ugc" title="Canal de Youtube">
+        <i class='bx bxl-instagram-alt text-5xl'></i>
       </a>
-      <a href="#" aria-label="Facebook" rel="ugc" title="Página de Facebook">
+      <a href="#" class="border rounded-xl inline-flex p-0.5 hover:bg-white hover:border-red-700 hover:text-red-600 transition-colors duration-300" aria-label="Facebook" rel="ugc" title="Página de Facebook">
         <i class='bx bxl-facebook-square text-5xl' ></i>
       </a>
-      <a href="#" aria-label="WhatsApp" rel="ugc" title="Contáctanos por WhatsApp">
-        <i class='bx bxl-whatsapp text-5xl'></i>
+      <a href="#" class="border rounded-xl inline-flex p-0.5 hover:bg-white hover:border-red-700 hover:text-red-600 transition-colors duration-300" aria-label="WhatsApp" rel="ugc" title="Contáctanos por WhatsApp">
+        <i class='bx bxl-whatsapp-square text-5xl'></i>
       </a>
     </div>
     </div>
 
     <div class="flex items-center aspect-square">
-      <span alt="Logo C3" class="block scale-150 -translate-x-10 sm:translate-x-0">
+      <span alt="Logo C3" class="block ">
         <a href="/" title="Canal 3 - Salta" class="">
                 <LogoComponent />
         </a>
@@ -34,7 +34,7 @@
     </div>
   </div>
   <div class="border-t border-white mt-6 pt-4 text-center text-sm">
-    Desarrollado por D'ambrosio Studio | Canal 3 TV - Todos los derechos reservados
+    <a href="https://www.cdl.net.ar/" target="_blank">Desarrollado por <span  class="font-iceberg text-base">{CDL}</span> - Wuaze TV | Ningun derecho reservado</a>
   </div>
 </footer>
 </template>

@@ -1,9 +1,13 @@
 <template>
-    <div class="relative max-w-5xl mx-auto mb-8">
+
+    <div class="bg-red-600 py-5">
+        <span
+            class="text-white font-bold text-lg md:text-xl lg:text-2xl block text-center w-full max-w-4xl mx-auto rounded-t-3xl uppercase pt-0 pb-6">ANUNCIOS</span>
+    <div class="relative max-w-5xl mx-auto mb-8 container px-2">
         <button ref="btnPrev" class="h-full absolute text-white z-10 top-0 left-0 xl:-left-20"><i
                 class='bx bxs-chevron-left text-5xl md:text-6xl xl:text-7xl'></i></button>
 
-        <div class="overflow-hidden max-w-5xl mx-auto aspect-video rounded-3xl relative">
+        <div class="overflow-hidden max-w-5xl mx-auto aspect-video rounded-xl relative">
 
             <div v-if="imagesArr == 0" class="carouselDiv w-5xl"
                     :style="{ backgroundImage: `url(${bannerCanal3})`}" title="Canal 3 - Banner">
@@ -20,6 +24,7 @@
         <button ref="btnNext" class="absolute text-white z-10 top-[44%] right-0 xl:-right-20"><i
                 class='bx bxs-chevron-right text-5xl md:text-6xl xl:text-7xl'></i></button>
     </div>
+</div>
 </template>
 
 <script setup>

@@ -95,11 +95,12 @@
 
 </head>
 
-<body class="antialiased ">
+<body class="antialiased">
+
     <div id="app"
-        class="bg-gray-100 dark:bg-gray-900 top-0 z-[-2] min-h-[100dvh] w-full  bg-[radial-gradient(#eeeeee33_1px,#1d1d1d_1px)] bg-[size:20px_20px]">
+        class="inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
         <header-component></header-component>
-        <main class="container mx-auto px-2">
+        <main class="">
             @yield('content')
         </main>
         <footer-component></footer-component>

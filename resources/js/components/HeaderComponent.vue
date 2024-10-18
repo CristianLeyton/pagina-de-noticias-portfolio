@@ -54,7 +54,7 @@
             <form v-show="mostrarSearch" id="form-search" action="/noticias" method="get"
                 class="absolute top-full w-full bg-red-600 py-2 px-4 sm:px-16 -z-10 md:hidden" :class="{'border-b-2 border-red-700': mostrarSearch}">
                 <div class="w-full relative">
-                    <input class="w-full rounded-3xl outline-none text-gray-900 py-2 px-4 text-sm" name="search"
+                    <input class="w-full rounded-3xl outline-none text-gray-800 py-2 px-4 text-sm" name="search"
                         placeholder="" required>
                     <button title="Buscar" type="submit"
                         class="absolute top-0 end-0 h-full px-3 text-sm font-medium text-red-600">
@@ -72,15 +72,15 @@
         <!-- Menu mobile -->
         <transition name="slide">
             <div v-show="mostrarMenu" class="bg-red-600 absolute top-full w-full -z-20 md:hidden" :class="{'border-b-2 border-red-700': mostrarMenu}">
-                <ul class="uppercase flex flex-col gap-2 font-semibold px-14 py-4">
+                <ul class="uppercase flex flex-col gap-2 font-semibold px-2 py-4">
                     <a href="/#inicio" title="Inicio">
-                        <li class="border-b-2 border-transparent rounded-lg px-4 py-1 hover:bg-red-500">Inicio</li>
+                        <li class="border-b-2 border-transparent rounded-lg px-4 py-1 transition-all ease-in-out duration-300 hover:bg-red-700">Inicio</li>
                     </a>
                     <a href="/noticias" title="Noticias">
-                        <li class="border-b-2 border-transparent rounded-lg px-4 py-1 hover:bg-red-500">Noticias</li>
+                        <li class="border-b-2 border-transparent rounded-lg px-4 py-1 transition-all ease-in-out duration-300 hover:bg-red-700">Noticias</li>
                     </a>
                     <a href="#contacto" title="Contacto">
-                        <li class="border-b-2 border-transparent rounded-lg px-4 py-1 hover:bg-red-500">Contacto</li>
+                        <li class="border-b-2 border-transparent rounded-lg px-4 py-1 transition-all ease-in-out duration-300 hover:bg-red-700">Contacto</li>
                     </a>
                 </ul>
             </div>

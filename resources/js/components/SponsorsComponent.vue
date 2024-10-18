@@ -1,16 +1,24 @@
 <template>
-    <transition name="slide">
-      <div v-if="urlSponsors.length" class="max-w-5xl slider">
-        <div class="slide-track">
+  <transition name="slide">
+    <div v-if="urlSponsors.length" class="container mx-auto p-4">
+
+      <span
+        class="text-red-600 font-bold text-lg md:text-xl lg:text-2xl block text-center w-full max-w-4xl mx-auto rounded-t-3xl uppercase pb-2">
+      NUESTROS PATROCINADORES
+      </span>
+      <div class="max-w-7xl slider">
+        <div class="slide-track mt-8">
           <!-- Duplicar los elementos para un scroll infinito -->
-          <a target="_blank" v-for="(banner, index) in [...urlSponsors, ...urlSponsors]" :href="banner.link" :key="index"
+          <a target="_blank" v-for="(banner, index) in [...urlSponsors, ...urlSponsors]" :href="banner.link"
+            :key="index"
             class="slide block w-full bg-center bg-cover bg-no-repeat max-w-72 md:max-w-[310px] aspect-video"
             :style="{ backgroundImage: `url(${banner.url})` }" :alt="banner.name" :title="banner.name">
           </a>
         </div>
       </div>
-    </transition>
-  </template>
+    </div>
+  </transition>
+</template>
 
 <script setup>
 
@@ -24,21 +32,21 @@ let urlSponsors = ref([]);
 
 /*Consumo la API*/
 fetch(urlApi)
-    .then(response => response.json())
-    .then((data) => {
-        data.forEach(item => {
-            const urlImage = `${urlBase}/storage_public/${item.image}`;
+  .then(response => response.json())
+  .then((data) => {
+    data.forEach(item => {
+      const urlImage = `${urlBase}/storage_public/${item.image}`;
 
-            const sponsor = {
-                url: urlImage,
-                name: item.name,
-                link: item.link
-            }
+      const sponsor = {
+        url: urlImage,
+        name: item.name,
+        link: item.link
+      }
 
-            urlSponsors.value.push(sponsor);
-        });
-    })
-    .catch(err => console.error(err));
+      urlSponsors.value.push(sponsor);
+    });
+  })
+  .catch(err => console.error(err));
 
 
 console.log(urlSponsors.value)
@@ -50,36 +58,40 @@ console.log(urlSponsors.value)
 <style scoped>
 .slide-enter-active,
 .slide-leave-active {
-    transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
 }
 
 .slide-enter-from {
-    transform: translateY(500%);
-    opacity: 100;
+  transform: translateY(500%);
+  opacity: 100;
 }
 
 .slide-leave-to {
-    transform: translateY(500%);
-    opacity: 100;
+  transform: translateY(500%);
+  opacity: 100;
 }
 
 
 .slider {
   display: flex;
-  width: 90vw;
+  width: 100%;
   height: auto;
   margin: auto;
   overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, black 10%, black 90%, transparent 100%);
 }
 
 .slider .slide-track {
   display: flex;
   animation: scroll 30s linear infinite;
-  animation-play-state: running; /* Inicialmente, la animación está corriendo */
+  animation-play-state: running;
+  /* Inicialmente, la animación está corriendo */
 }
 
 .slider:hover .slide-track {
-  animation-play-state: paused; /* Pausar la animación al hacer hover */
+  animation-play-state: paused;
+  /* Pausar la animación al hacer hover */
 }
 
 .slider .slide {
@@ -89,10 +101,25 @@ console.log(urlSponsors.value)
   margin-bottom: 2rem;
 }
 
+.slider .slide:nth-of-type(odd) {
+  transform: rotate(-2deg);
+  transition: all ease-in-out 0.3s;
+}
+
+.slider .slide:nth-of-type(even) {
+  transform: rotate(2deg);
+  transition: all ease-in-out 0.3s;
+}
+
+.slider:hover .slide {
+  transform: rotate(0deg);
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }

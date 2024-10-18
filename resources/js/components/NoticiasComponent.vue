@@ -3,13 +3,14 @@
     </div>
     <transition name="slide">
         <section v-if="ultimasNoticias != 0"
-            class="flex flex-col gap-5 items-center w-full mx-auto max-w-4xl overflow-hidden mb-10 bg-slate-100 rounded-3xl p-3">
+            class="flex flex-col gap-5 items-center w-full bg-white container mx-auto p-3 max-w-5xl">
+
             <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-red-600 pt-3">ÚLTIMAS NOTICIAS</h1>
 
             <article v-for="(noticia, index) in ultimasNoticias" :key="index"
-                class="flex flex-col md:flex-row rounded-xl p-3 w-full gap-5" :title="noticia.title">
+                class="shadow-big flex flex-col md:flex-row rounded-xl p-3 w-full gap-5" :title="noticia.title">
 
-                <a :href="noticia.link" class="shadow-image w-full aspect-video md:max-w-sm lg:max-w-md overflow-hidden"
+                <a :href="noticia.link" class=" w-full aspect-video md:max-w-sm lg:max-w-md overflow-hidden rounded-lg"
                     :title="noticia.title">
                     <span
                         class="block w-full h-full bg-cover bg-center bg-no-repeat hover:scale-110 transform transition-all duration-500 ease-in-out overflow-hidden"
@@ -22,12 +23,12 @@
                         <h3 class="text-xl md:text-2xl lg:text-3xl font-bold md:line-clamp-2 text-ellipsis"><a
                                 :href="noticia.link" :title="noticia.title"> {{ noticia.title }}</a></h3>
                         <small class="first-letter:capitalize text-gray-500">{{ noticia.date }}</small>
-                        <p class="text-ellipsis text-pretty text-sm line-clamp-4 lg:line-clamp-5 font-semibold">
+                        <p class="text-ellipsis text-pretty text-sm line-clamp-4 lg:line-clamp-5 font-base">
                             {{ noticia.description }} </p>
                     </div>
                     <a :href="noticia.link" class="text-center w-full grid">
                         <button
-                            class="text-white bg-red-600 hover:bg-red-500 active:scale-95 pb-1 rounded-2xl text-lg font-semibold my-2 transition-all duration-100 ease-out">
+                            class="text-white bg-red-600 hover:bg-red-500 active:scale-95 pb-1 rounded-md text-lg font-semibold my-2 transition-all duration-100 ease-out">
                             Leer más
                         </button>
                     </a>
@@ -35,9 +36,10 @@
             </article>
 
             <a href="/noticias" class="w-full" title="Ver más noticias"> <button
-                    class="text-white w-full bg-red-600 hover:bg-red-500 active:scale-95 pb-1 rounded-2xl text-xl font-semibold my-2 transition-all duration-100 ease-out">
+                    class="rounded-lg text-white w-full bg-red-600 hover:bg-red-500 active:scale-95 pb-1 text-xl font-semibold my-2 transition-all duration-100 ease-out">
                     Ver más noticias
                 </button></a>
+
         </section>
     </transition>
 </template>

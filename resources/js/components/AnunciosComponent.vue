@@ -1,10 +1,12 @@
 <template>
   <transition name="slide">
-  <div v-if="urlAnuncios != 0" class="flex flex-col gap-10 items-center mb-8 max-w-5xl mx-auto">
+  <div v-if="urlAnuncios != 0" class="flex flex-col gap-10 items-center pb-8 bg-red-600">
+    <div class="max-w-5xl px-2 container mx-auto">
     <a v-for="(banner, index) in urlAnuncios" :key="index" :href="banner.link" target="_blank">
     <img class="" :src="banner.url" :alt="banner.name"
       :title="banner.name">
     </a>
+  </div>
   </div>
 </transition>
 </template>
