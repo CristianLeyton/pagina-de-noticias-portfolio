@@ -1,7 +1,7 @@
 <template>
     <div class="h-fit pt-8 mb-8 scroll-m-16 container mx-auto px-2" id="inicio">
         <span
-            class="text-red-600 font-bold text-lg md:text-xl lg:text-2xl block text-center w-full max-w-4xl mx-auto rounded-t-3xl uppercase pt-0 pb-6">TRANSMISIÓN
+            class="text-red-500 font-bold text-lg md:text-xl lg:text-2xl block text-center w-full max-w-4xl mx-auto rounded-t-3xl uppercase pt-0 pb-6">TRANSMISIÓN
             EN VIVO</span>
         <div v-if="!linkLive"
             class="shadow-big text-white bg-slate-950 w-full max-w-4xl aspect-video mx-auto grid place-items-center">

@@ -3,12 +3,12 @@
     </div>
     <transition name="slide">
         <section v-if="ultimasNoticias != 0"
-            class="flex flex-col gap-5 items-center w-full bg-white container mx-auto p-3 max-w-5xl">
+            class="flex flex-col gap-5 items-center w-full bg-transparent container mx-auto p-3 max-w-5xl">
 
-            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-red-600 pt-3">ÚLTIMAS NOTICIAS</h1>
+            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-red-500 pt-3">ÚLTIMAS NOTICIAS</h1>
 
             <article v-for="(noticia, index) in ultimasNoticias" :key="index"
-                class="shadow-big flex flex-col md:flex-row rounded-xl p-3 w-full gap-5" :title="noticia.title">
+                class="bg-white shadow-big flex flex-col md:flex-row rounded-xl p-3 w-full gap-5" :title="noticia.title">
 
                 <a :href="noticia.link" class=" w-full aspect-video md:max-w-sm lg:max-w-md overflow-hidden rounded-lg"
                     :title="noticia.title">

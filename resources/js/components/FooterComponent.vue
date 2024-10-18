@@ -14,13 +14,13 @@
 
     <div class="flex space-x-4 mb-6 md:mb-0 flex-grow">
       <a href="#" class="border rounded-xl inline-flex p-0.5 hover:bg-white hover:border-red-700 hover:text-red-600 transition-colors duration-300" aria-label="YouTube" rel="ugc" title="Canal de Youtube">
-        <i class='bx bxl-instagram-alt text-5xl'></i>
+        <i class='bx bxl-instagram-alt text-4xl'></i>
       </a>
       <a href="#" class="border rounded-xl inline-flex p-0.5 hover:bg-white hover:border-red-700 hover:text-red-600 transition-colors duration-300" aria-label="Facebook" rel="ugc" title="Página de Facebook">
-        <i class='bx bxl-facebook-square text-5xl' ></i>
+        <i class='bx bxl-facebook-square text-4xl' ></i>
       </a>
       <a href="#" class="border rounded-xl inline-flex p-0.5 hover:bg-white hover:border-red-700 hover:text-red-600 transition-colors duration-300" aria-label="WhatsApp" rel="ugc" title="Contáctanos por WhatsApp">
-        <i class='bx bxl-whatsapp-square text-5xl'></i>
+        <i class='bx bxl-whatsapp-square text-4xl'></i>
       </a>
     </div>
     </div>

@@ -11,9 +11,9 @@ export default {
         'white': '#ffffff',
         'transparent': 'transparent',
         'red': {
-          500: '#e21b4d',
-          600: '#FF0043',
-          700: '#CC0036',
+          500: '#0070ac',
+          600: '#003049',
+          700: '#210646',
         },
         // ...
       }

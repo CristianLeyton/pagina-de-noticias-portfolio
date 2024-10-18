@@ -3,7 +3,7 @@
     <div v-if="urlSponsors.length" class="container mx-auto p-4">
 
       <span
-        class="text-red-600 font-bold text-lg md:text-xl lg:text-2xl block text-center w-full max-w-4xl mx-auto rounded-t-3xl uppercase pb-2">
+        class="text-red-500 font-bold text-lg md:text-xl lg:text-2xl block text-center w-full max-w-4xl mx-auto rounded-t-3xl uppercase pb-2">
       NUESTROS PATROCINADORES
       </span>
       <div class="max-w-7xl slider">
@@ -11,7 +11,7 @@
           <!-- Duplicar los elementos para un scroll infinito -->
           <a target="_blank" v-for="(banner, index) in [...urlSponsors, ...urlSponsors]" :href="banner.link"
             :key="index"
-            class="slide block w-full bg-center bg-cover bg-no-repeat max-w-72 md:max-w-[310px] aspect-video"
+            class="slide shadow-lg block w-full bg-center bg-cover bg-no-repeat max-w-72 md:max-w-[310px] aspect-video"
             :style="{ backgroundImage: `url(${banner.url})` }" :alt="banner.name" :title="banner.name">
           </a>
         </div>

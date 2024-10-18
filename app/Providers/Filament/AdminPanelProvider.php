@@ -31,10 +31,10 @@ class AdminPanelProvider extends PanelProvider
             ->login()
             ->profile()
             ->colors([
-                'danger' => Color::Orange,
+                'danger' => Color::Red,
                 'gray' => Color::Gray,
-                'info' => Color::Blue,
-                'primary' => Color::Rose,
+                'info' => Color::Orange,
+                'primary' => Color::Blue,
                 'success' => Color::Emerald,
                 'warning' => Color::Violet,
             ])

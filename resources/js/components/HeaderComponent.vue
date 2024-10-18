@@ -126,7 +126,7 @@ const toggleSearch = () => {
 }
 
 .shadow-red {
-    box-shadow: 0 2px 0px #B91C1C;
+    box-shadow: 0 2px 0px #0070ac;
 }
 
 .hover-border-b::after {

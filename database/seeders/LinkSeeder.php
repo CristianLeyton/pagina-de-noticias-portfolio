@@ -16,7 +16,7 @@ class LinkSeeder extends Seeder
         //
         Links::create([
             'name'=>'Wuaze TV - En vivo',
-            'link'=>'https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1&mute=1&modestbranding=1',
+            'link'=>'https://www.youtube.com/embed/t_P4mOSv5hY?autoplay=1&mute=1&modestbranding=1',
         ]);
     }
 }

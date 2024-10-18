@@ -11,7 +11,7 @@
 
             <div class="overflow-hidden max-w-5xl mx-auto aspect-video rounded-xl relative">
 
-                <div v-if="imagesArr == 0" class="carouselDiv w-5xl" :style="{ backgroundImage: `url(${bannerCanal3})` }"
+                <div v-if="imagesArr == 0" class="carouselDiv w-5xl" :style="{ backgroundImage: `url(${bannerCanal})` }"
                     title="Wuaze TV - Banner">
                 </div>
 
@@ -35,7 +35,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-const bannerCanal3 = ref("./src/images/canal3-banner.webp")
+const bannerCanal = ref("./src/images/wuaze-banner.webp")
 
 const urlBase = window.location.origin;
 const urlApi = `${urlBase}/api/imagenes`;
