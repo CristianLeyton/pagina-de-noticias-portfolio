@@ -21,7 +21,7 @@
                             <a :href="noticia.link" :title="noticia.title"> {{ noticia.title }}</a>
                         </h3>
                         <small class="first-letter:capitalize text-gray-500">{{ noticia.date }}</small>
-                        <p class="text-ellipsis text-pretty text-sm line-clamp-4 lg:line-clamp-5 font-semibold">
+                        <p class="text-ellipsis text-pretty text-sm line-clamp-4 lg:line-clamp-5 font-base">
                             {{ noticia.description }} 
                         </p>
                     </div>

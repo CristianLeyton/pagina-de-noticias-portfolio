@@ -74,13 +74,13 @@
             <div v-show="mostrarMenu" class="bg-red-600 absolute top-full w-full -z-20 md:hidden" :class="{'border-b-2 border-red-700': mostrarMenu}">
                 <ul class="uppercase flex flex-col gap-2 font-semibold px-2 py-4">
                     <a href="/#inicio" title="Inicio">
-                        <li class="border-b-2 border-transparent rounded-lg px-4 py-1 transition-all ease-in-out duration-300 hover:bg-red-700">Inicio</li>
+                        <li class="border-b-2 border-transparent rounded-lg px-4 py-1 transition-all ease-in-out duration-300 hover:bg-red-500">Inicio</li>
                     </a>
                     <a href="/noticias" title="Noticias">
-                        <li class="border-b-2 border-transparent rounded-lg px-4 py-1 transition-all ease-in-out duration-300 hover:bg-red-700">Noticias</li>
+                        <li class="border-b-2 border-transparent rounded-lg px-4 py-1 transition-all ease-in-out duration-300 hover:bg-red-500">Noticias</li>
                     </a>
                     <a href="#contacto" title="Contacto">
-                        <li class="border-b-2 border-transparent rounded-lg px-4 py-1 transition-all ease-in-out duration-300 hover:bg-red-700">Contacto</li>
+                        <li class="border-b-2 border-transparent rounded-lg px-4 py-1 transition-all ease-in-out duration-300 hover:bg-red-500">Contacto</li>
                     </a>
                 </ul>
             </div>
