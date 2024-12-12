@@ -99,21 +99,28 @@ console.log(urlSponsors.value)
   margin: 1rem;
   margin-top: 0;
   margin-bottom: 2rem;
+  filter: grayscale(1);
+
+  &:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+  }
+
 }
 
 .slider .slide:nth-of-type(odd) {
-  transform: rotate(-2deg);
+/*   transform: rotate(-2deg); */
   transition: all ease-in-out 0.3s;
 }
 
 .slider .slide:nth-of-type(even) {
-  transform: rotate(2deg);
+/*   transform: rotate(2deg); */
   transition: all ease-in-out 0.3s;
 }
 
-.slider:hover .slide {
+/* .slider:hover .slide {
   transform: rotate(0deg);
-}
+} */
 
 @keyframes scroll {
   0% {
