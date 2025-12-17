@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
         //creación de usuarios para roles de prueba
         User::create([
             'name'=>'Admin',
-            'email'=>'admin@canal3.com.ar',
+            'email'=>'admin@mail.com',
             'password'=> Hash::make('admin'),
             'email_verified_at'=> '2023-11-17 18:07:39',
         ]);
